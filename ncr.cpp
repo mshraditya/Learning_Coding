@@ -17,9 +17,7 @@ int main() {
     cin>>n;
     cout<<"Enter the value of R ";
     cin>>r;
-    int nfactorial=factorial(n);
-    int rfactorial=factorial(r);
-    int nrfactorial=factorial(n-r);
+     
     cout<<ncr(n,r);
 
     }
