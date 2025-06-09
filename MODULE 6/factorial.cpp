@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int n;
+    long long n;
     cout<<"the factorial"<<endl;
     cin>>n;
-    int factorial=1;
+    long long factorial=1;
     for(int i =1 ; i<=n;i++){
         factorial*=i;
     }
