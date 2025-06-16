@@ -12,9 +12,7 @@ int main(){
 for(int i =1;i<=n-1;i++){
     if(max<arr[i]) {
         max=arr[i];
-    
     }
-
 }
 cout<<"The Maximum Value of the ARRAY is "<<max<<endl;
 
