@@ -16,6 +16,8 @@ void Display(vector<int>&a){
 
 int main() {
     vector<int>nums;
+    vector<int>v;
+
     v.push_back(1);
     v.push_back(2);
     v.push_back(0);
