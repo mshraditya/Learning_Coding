@@ -20,7 +20,7 @@ int main (){
             cout<<" ";
         }
         for (int j =0 ;j<=i;j++){
-            cout<<" "<<ncr(i,j)<<" ";
+            cout<<ncr(i,j)<<" ";
         }
         cout<<endl;
     }
