@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int stair(int n){
+    if(n==1 ) return 1;
+    else if(n==2) return 2;
+    else if (n==3) return 4;
+    return stair(n-1)+stair(n-2)+stair(n-3);
+}
+int main() {
+    int n;
+    cout<<"Enter the number of Stair : ";
+    cin>>n;
+    cout<<stair(n);
+    return 0;
+}
