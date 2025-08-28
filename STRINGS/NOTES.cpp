@@ -17,7 +17,7 @@ int main() {
     // bich ka kahi se kahi tk agr likhna ho toh substring use krte hai 
     //syntax of substring 
     // s.substr(index,length)
-    //note****** we can only print substrin gfrom left to right 
+    //note****** we can only print substring from left to right 
     // if length is not inserted then we will get all  the length
     //from that index
     // STRING STREAM
@@ -29,8 +29,9 @@ string s = "hey there this is Aditya Mishra";
 stringstream printer(s);
 string temp;
 while ( printer>>temp){
-    cout<<temp<<endl;
+     
 }
+cout<<temp.size();
 // ^ above is the syntax of string stream 
     return 0;
 }
