@@ -28,10 +28,15 @@ int main() {
 string s = "hey there this is Aditya Mishra";
 stringstream printer(s);
 string temp;
+int i=0;
 while ( printer>>temp){
-     
-}
-cout<<temp.size();
+        i++;
+    }
+    cout<<temp;
+
+
+
+ 
 // ^ above is the syntax of string stream 
     return 0;
 }
