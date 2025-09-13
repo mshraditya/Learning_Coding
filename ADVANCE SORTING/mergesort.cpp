@@ -19,12 +19,10 @@ using namespace std;
         int n2=ans.size()-n1;
         vector<int>a(n1);
         vector<int>b(n2);
-        for(int i=0;i<n1;i++){
-            a[i]=ans[i];
-        }
-         for(int i=0;i<n2;i++){
-            b[i]=ans[i+n1];
-        }
+        for(int i=0;i<n1;i++)  a[i]=ans[i];
+         
+         for(int i=0;i<n2;i++) b[i]=ans[i+n1];
+         
         MergeSort(a);
         MergeSort(b);
         merge(a,b,ans);
@@ -43,25 +41,14 @@ using namespace std;
       int n=nums1.size();
         int m=nums2.size();
         vector<int>v(n+m);
-        for(int i=0;i<n;i++){
-            v[i]=nums1[i];
-        }
-         for(int i=0;i<m;i++){
-            v[i+n]=nums2[i];
-        }
-        for(int i=0;i<v.size();i++){
-            cout<<v[i]<<" ";
-        }
+        for(int i=0;i<n;i++) v[i]=nums1[i];
+         for(int i=0;i<m;i++)  v[i+n]=nums2[i];
+        for(int i=0;i<v.size();i++) cout<<v[i]<<" ";
+        
         cout<<endl;
         MergeSort(v);
-        for(int i=0;i<v.size();i++){
-            cout<<v[i]<<" ";
-        }
+        for(int i=0;i<v.size();i++) cout<<v[i]<<" ";
         cout<<endl;
-        float n1=v.size();
-        
-         if(v.size()%2!=0) cout<<v[(n1)/2];
-         else       
-
+        float n1=v.size();     
          return 0;
     }
