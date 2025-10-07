@@ -20,15 +20,12 @@ using namespace std;
         vector<int>a(n1);
         vector<int>b(n2);
         for(int i=0;i<n1;i++)  a[i]=ans[i];
-         
          for(int i=0;i<n2;i++) b[i]=ans[i+n1];
          
         MergeSort(a);
         MergeSort(b);
         merge(a,b,ans);
     }
-        
-
     int main() {
         vector<int>nums1;
         nums1.push_back(1);
